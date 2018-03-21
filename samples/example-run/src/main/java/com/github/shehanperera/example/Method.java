@@ -1,12 +1,13 @@
 package com.github.shehanperera.example;
 
-public class Method{
+public class Method {
 
-    Method(){
+    Method() {
 
         System.out.println("This is constructor ");
     }
-    public static void method1(){
+
+    public static void method1() {
 
         try {
             Thread.sleep(500);
@@ -15,7 +16,8 @@ public class Method{
             //Ignore
         }
     }
-    public static void method2(){
+
+    public static void method2() {
 
         try {
             Thread.sleep(1000);
@@ -24,4 +26,13 @@ public class Method{
             //Ignore
         }
     }
+
+    public static void method4(int number, String name, boolean run) {
+
+        if (run) {
+            System.out.println("This is method 4 with run = true");
+            System.out.println("Name :" + name + " and number :" + number);
+        }
+    }
+
 }

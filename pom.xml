@@ -25,6 +25,7 @@
         <module>samples/add-field</module>
         <module>samples/add-method</module>
         <module>samples/igonre-class</module>
+        <module>samples/get-parameters</module>
     </modules>
     <dependencies>
         <dependency>
