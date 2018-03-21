@@ -1,0 +1,9 @@
+#Idea files
+.idea
+*.iml
+
+# Maven Target
+target
+
+# Generated POM
+dependency-reduced-pom.xml
