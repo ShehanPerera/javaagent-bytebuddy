@@ -24,8 +24,8 @@
         <module>samples/constructor-instrument</module>
         <module>samples/add-field</module>
         <module>samples/add-method</module>
-        <module>samples/igonre-class</module>
         <module>samples/get-parameters</module>
+        <module>samples/igonre-class</module>
     </modules>
     <dependencies>
         <dependency>
