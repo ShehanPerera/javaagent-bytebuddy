@@ -17,21 +17,18 @@ public class Method {
         }
     }
 
-    public static void method2() {
+    public static void method4(int number, String word, boolean bool) {
+
+        System.out.println("String :" + word + " and number :" + number + " and boolean :" + bool);
+    }
+
+    public void method2() {
 
         try {
             Thread.sleep(1000);
             System.out.println("This is Method 2");
         } catch (InterruptedException e) {
             //Ignore
-        }
-    }
-
-    public static void method4(int number, String name, boolean run) {
-
-        if (run) {
-            System.out.println("This is method 4 with run = true");
-            System.out.println("Name :" + name + " and number :" + number);
         }
     }
 
