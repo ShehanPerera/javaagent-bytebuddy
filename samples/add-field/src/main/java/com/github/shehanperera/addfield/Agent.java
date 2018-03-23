@@ -2,14 +2,12 @@ package com.github.shehanperera.addfield;
 
 import net.bytebuddy.agent.builder.AgentBuilder;
 import net.bytebuddy.asm.Advice;
-import net.bytebuddy.description.modifier.Visibility;
 import net.bytebuddy.matcher.ElementMatchers;
 
 import java.lang.instrument.Instrumentation;
 
 /**
  * This is the agent for set and get values form running class
- *
  */
 public class Agent {
 
@@ -21,10 +19,12 @@ public class Agent {
                 .with(new AgentBuilder.InitializationStrategy.SelfInjection.Eager())
                 .type((ElementMatchers.nameContains("Method")))
                 .transform((builder, typeDescription, classLoader, module) -> builder
-                        .defineField("word", String.class, Visibility.PUBLIC)
-                        .defineField("number", int.class, Visibility.PUBLIC)
-                        .method(ElementMatchers.nameContains("method1"))
+                        .defineField("bool", Boolean.class)
+                        .defineField("word", String.class)
+                        .constructor(ElementMatchers.any())
                         .intercept(Advice.to(SetField.class))
+                        .method(ElementMatchers.nameContains("method2"))
+                        .intercept(Advice.to(GetField.class))
                 ).installOn(instrumentation);
 
     }
