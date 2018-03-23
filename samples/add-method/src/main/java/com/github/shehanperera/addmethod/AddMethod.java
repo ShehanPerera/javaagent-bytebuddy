@@ -7,7 +7,7 @@ public class AddMethod {
     @Advice.OnMethodExit
     static void method3() throws Exception {
 
-       System.out.println("This is new method ");
+        System.out.println("This is new method : method 3");
 
     }
 
