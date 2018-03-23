@@ -4,15 +4,14 @@ import net.bytebuddy.asm.Advice;
 
 public class GetField {
 
-    @Advice.OnMethodExit
-    static void exitMethods(@Advice.FieldValue(value = "word") String word, @Advice.FieldValue(value = "number")
-            int number) throws Exception {
+    @Advice.OnMethodEnter
+    public static void exit(@Advice.FieldValue(value = "bool") boolean bool,
+                            @Advice.FieldValue(value = "word") String word)
+            throws Exception {
 
-        System.out.println("This is number after exit method2 " + number);
-        System.out.println("This is word after exit method2 " + word);
+        System.out.println("Getting New Fields");
+        System.out.println("boolean value is " + bool + " and String value is " + word);
 
     }
-
-
 
 }
