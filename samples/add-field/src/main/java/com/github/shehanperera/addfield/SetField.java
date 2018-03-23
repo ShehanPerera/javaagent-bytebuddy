@@ -5,11 +5,13 @@ import net.bytebuddy.asm.Advice;
 public class SetField {
 
     @Advice.OnMethodExit
-    public static void enterMethods(@Advice.FieldValue(value = "word") String word, @Advice.FieldValue(value = "number")
-            int number) throws Exception {
+    public static void enter(@Advice.FieldValue(value = "bool", readOnly = false) boolean bool,
+                             @Advice.FieldValue(value = "word", readOnly = false) String word)
+            throws Exception {
 
-        System.out.println("This is number before enter method1 " + number);
-        System.out.println("This is word before enter method1 " + word);
+        System.out.println("Adding boolean (true) and String (New String Field) Fields ");
+        bool = true;
+        word = "New String Field";
 
     }
 
