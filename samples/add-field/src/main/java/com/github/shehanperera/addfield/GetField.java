@@ -9,8 +9,8 @@ public class GetField {
      * method2 should be non-static method.
      */
     @Advice.OnMethodEnter
-    public static void exit(@Advice.FieldValue(value = "bool") boolean bool,
-                            @Advice.FieldValue(value = "word") String word)
+    public static void getValues(@Advice.FieldValue(value = "bool") boolean bool,
+                                 @Advice.FieldValue(value = "word") String word)
             throws Exception {
 
         System.out.println("Getting New Fields");
