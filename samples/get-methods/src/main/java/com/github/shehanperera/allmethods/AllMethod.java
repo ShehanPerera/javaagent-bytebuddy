@@ -5,7 +5,7 @@ import net.bytebuddy.asm.Advice;
 public class AllMethod {
 
     @Advice.OnMethodExit
-    static void exitMethod(@Advice.Origin String method) throws Exception {
+    static void getAllMethods(@Advice.Origin String method) throws Exception {
 
         System.out.println(method);
     }
