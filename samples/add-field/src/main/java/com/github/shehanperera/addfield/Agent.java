@@ -13,7 +13,7 @@ public class Agent {
 
     public static void premain(String arguments, Instrumentation instrumentation) {
 
-        System.out.println("Agent for Field Adding ");
+        System.out.println("Agent for add fields ");
 
         new AgentBuilder.Default()
                 .with(new AgentBuilder.InitializationStrategy.SelfInjection.Eager())
