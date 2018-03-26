@@ -7,7 +7,7 @@ public class Method {
         System.out.println("This is constructor ");
     }
 
-    public static void method1() {
+    public void method1() {
 
         try {
             Thread.sleep(500);
@@ -15,11 +15,6 @@ public class Method {
         } catch (InterruptedException e) {
             //Ignore
         }
-    }
-
-    public static void method4(int number, String word, boolean bool) {
-
-        System.out.println("String :" + word + " and number :" + number + " and boolean :" + bool);
     }
 
     public void method2() {
@@ -30,6 +25,11 @@ public class Method {
         } catch (InterruptedException e) {
             //Ignore
         }
+    }
+
+    public void method4(int number, String word, boolean bool) {
+
+        System.out.println("String :" + word + " and number :" + number + " and boolean :" + bool);
     }
 
 }
