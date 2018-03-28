@@ -25,7 +25,7 @@
         <module>samples/add-field</module>
         <module>samples/add-method</module>
         <module>samples/get-parameters</module>
-        <module>samples/igonre-class</module>
+        <module>samples/ignore-class</module>
     </modules>
     <dependencies>
         <dependency>

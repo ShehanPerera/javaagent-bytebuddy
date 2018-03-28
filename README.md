@@ -70,7 +70,7 @@ Please read My blog '<a href="https://medium.com/@shehanperera.office/java-agent
       public void com.github.shehanperera.example.Method.method4(int,java.lang.String,boolean) took 1 milliseconds 
       public static void com.github.shehanperera.example.Sample.main(java.lang.String[]) took 1522 milliseconds 
 ```
-Simillary we can use all other agents (get-parameters ,constructor-instrument ,add-field,add-method,igonre-class) as above way.
+Simillary we can use all other agents (get-parameters ,constructor-instrument ,add-field,add-method,ignore-class) as above way.
 Just copy agnet to  `javaagent-bytebuddy/samples/example-run/target`  and run it with agent 
 
 `java -javaagent:***-1.0-SNAPSHOT.jar -jar example-run-1.0-SNAPSHOT.jar`
