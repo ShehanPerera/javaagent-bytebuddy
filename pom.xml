@@ -8,7 +8,7 @@
     <name>javaagent-bytebuddy</name>
     <description>Examples for Java agent using Byte-Buddy</description>
     <inceptionYear>2018</inceptionYear>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/ShehanPerera/javaagent-bytebuddy</url>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>

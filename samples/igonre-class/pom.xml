@@ -12,7 +12,7 @@
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>igonre-class</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/ShehanPerera/javaagent-bytebuddy</url>
     <build>
         <plugins>
             <plugin>
