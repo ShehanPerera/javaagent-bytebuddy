@@ -9,7 +9,7 @@ This include several agents created using Byte-Buddy. Using this project we can 
 
 <b>2. Install the project </b>
 
-`mvn clean install`
+`mvn clean package`
 
 <b>3.Run example java progaram </b>
 * Go to the directory 
