@@ -58,7 +58,7 @@
         </plugins>
     </build>
     <name>execution-time</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/ShehanPerera/javaagent-bytebuddy</url>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>

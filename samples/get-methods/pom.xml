@@ -59,7 +59,7 @@
         </plugins>
     </build>
     <name>get-methods</name>
-    <url>http://maven.apache.org</url>
+    <url>https://github.com/ShehanPerera/javaagent-bytebuddy</url>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
